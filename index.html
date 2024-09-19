@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <a class="d-flex justify-content-around text-decoration-none bg-logo mx-5" href="">
+            <div class="img"> <img class="w-100" src="img/logo@2x.png" alt=""> </div>
+            <div class="title-nav text-white">
+                <p class="p-0 m-0"> weather</p>
+                <small class="p-0 m-0">tagline goes here</small>
+            </div>
+        </a>
+        <ul class="d-flex justify-content-around mx-4 w-50 w-45">
+            <li><a class="active px-4 py-1 my-1 " href="">Home</a></li>
+            <li><a class="text-white px-4 py-1 my-1 " href="">New</a></li>
+            <li><a class="text-white px-4 py-1 my-1 " href="">LIve cameras</a></li>
+            <li><a class="text-white px-4 py-1 my-1 " href="">Photos</a></li>
+            <li><a class="text-white px-4 py-1 my-1 " href="">Contact</a></li>
+
+
+        </ul>
+    </div>
+</nav>
+<div class=" back w-100">
+    <div class="container py-5">
+        <input id="search" placeholder= "   Find your location... " class=" text-white py-3 my-3 mx-auto form-control rounded-5 text-white" type="text">
+    </div>
+</div>
+<div class="W-100 BACKK">
+    <div class="container  h-100 position-relative">
+        <div class="row w-100  position-absolute  h-100 m-auto d-flex justify-content-center">
+            <div class="col-md-4 w-css rounded-start-4  p-0  bg-1">
+                <div class=" mb-4 history d-flex justify-content-between align-items-center text-light w-100">
+                    <p id="todayName" class="px-2 m-0  "></p>
+                    <div class="d-flex mx-2 align align-items-center">
+                        <span id="todayNumber" class="me-1"></span>
+                        <p id="month" class=" m-0 "></p>
+                    </div>
+                    
+                </div>
+                        <h3 id="todayCountry" class=" ms-3"></h3>
+                <div class="weather1  mx-3">
+                        <h1 id="todayTemp"></h1>
+                </div>
+                <div class="weather-img  mx-3">
+                    <img id="todayImg" src="" alt="">
+                </div>
+                     <p id="todayText" class="mx-3 bg-color"></p>
+                <div class="icons-weather mx-3 d-flex justify-content-between my-4">
+                    <span >
+                        <img src="img/icon-umberella.png" alt="">
+                        <span id="todayWind" class="textColor"></span>
+                    </span>
+                    <span >
+                        <img src="img/icon-wind.png" alt="">
+                        <span id="wind_kp" class="textColor"></span>
+                    </span>
+                    <span >
+                        <img src="img/icon-compass.png" alt="">
+                        <span id="wind_di" class="textColor"></span>
+                    </span>
+
+                </div>
+                
+              </div>
+            <div class="col-md-4 w-css rounded-0 p-0   bg-2">
+                <div class=" history d-flex justify-content-center align-items-center text-light w-100">
+                    <p id="tomorrowDay" class="m-0  "></p>
+                </div>
+                <div class="weather3  d-flex flex-column align-items-center justify-content-around my-4">
+                    <img id="imgTomorrow" class="sunn my-4" src="" alt="">
+                    <h3 id="tomorrowMaxTemp" class="text-white m-0"></h3>
+                    <p id="tomorrowMinTemp" class="textColor"></p>
+                    <p id="tomorrowText" class="bg-color my-2"></p>
+                </div>
+            </div>
+            <div class="col-md-4 w-css me-3  rounded-end-4 p-0   bg-3">
+                <div class=" history d-flex justify-content-center align-items-center text-light w-100">
+                    <p id="afterDay" class="m-0 "></p>    
+                </div>
+                <div class="weather3  d-flex flex-column justify-content-around  w-100 align-items-center my-4">
+                    <img id="afterImg" class="sunn my-4" src="" alt="">
+                    <h3 id="afterMaxTemp" class="text-white m-0"></h3>
+                    <p id="afterMinTemp" class="textColor"></p>
+                    <p id="afterText" class="bg-color my-2"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/joo.js"></script>
+</body>
+</html>
